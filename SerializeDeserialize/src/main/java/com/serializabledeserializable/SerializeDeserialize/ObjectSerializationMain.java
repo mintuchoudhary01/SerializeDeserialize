@@ -17,7 +17,7 @@ public class ObjectSerializationMain {
 
 		ObjectToSerialize dataObj = new ObjectToSerialize(1, "Mintu", 'm');
 		ObjectToSerialize dataObj2 = new ObjectToSerialize(2, "Yogesh", 'y');
-		ObjectToSerialize dataObj3 = new ObjectToSerialize(3, "Sandip", 's');
+		ObjectToSerialize dataObj3 = new ObjectToSerialize(3, "akash", 's');
 
 		System.out.println("Start of writing to file : object_datafile.txt ");
 		ostream.writeObject(dataObj);
@@ -33,7 +33,7 @@ public class ObjectSerializationMain {
 		 * Reading file
 		 *************************************/
 
-		FileInputStream ifstream = new FileInputStream("object_datafile.txt");
+	/*	FileInputStream ifstream = new FileInputStream("object_datafile.txt");
 		ObjectInputStream iostream = new ObjectInputStream(ifstream);
 
 		ObjectToSerialize data[] = new ObjectToSerialize[3];
@@ -41,6 +41,6 @@ public class ObjectSerializationMain {
 		for (int i = 0; i < 3; i++) {
 			data[i] = (ObjectToSerialize) iostream.readObject();
 			System.out.println(data[i].getNum() + " " + data[i].getWord() + " " + data[i].getCharacter());
-		}
+		}*/
 	}
 }
