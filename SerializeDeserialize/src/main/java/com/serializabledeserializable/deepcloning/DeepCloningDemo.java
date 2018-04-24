@@ -7,6 +7,12 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
+
+/*
+* If a superclass is not serializable then subclass can still be serialized :
+* Even though superclass doesn’t implements Serializable interface, we can serialize subclass object if subclass itself implements Serializable interface.
+* So we can say that to serialize subclass object, superclass need not to be serializable
+* */
 class Parent {
 	int i;
 }
