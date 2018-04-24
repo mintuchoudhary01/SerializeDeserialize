@@ -26,7 +26,7 @@ class Child extends Parent implements Serializable {
 	}
 }
 
-public class DeepCloningDemo {
+public class MultiLevelSerializableDemo {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
 		FileOutputStream fstream = new FileOutputStream("test.txt");
